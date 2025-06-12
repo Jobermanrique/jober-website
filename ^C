@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jobermanrique | Freelance Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Jobermanrique</h1>
+    <p>Freelance Web Developer</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I build fast, responsive, and modern websites using HTML, CSS, and JavaScript. Let's turn your idea into reality!</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>🌐 Website Development</li>
+        <li>📱 Mobile-Responsive Design</li>
+        <li>⚙️ JavaScript Interactivity</li>
+        <li>🔧 Website Fixes & Optimization</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Jobermanrique. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+x
