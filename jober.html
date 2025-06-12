@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jober the Programmer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 30px 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+    p.subtitle {
+      font-size: 1.3em;
+      margin-top: 5px;
+      color: #ddd;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1em;
+      color: white;
+      background-color: #ff9800;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e68900;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jober the Programmer</h1>
+    <p class="subtitle">Coding from anywhere. Even on Android.</p>
+  </header>
+
+  <main>
+    <p>Welcome to my personal space. I’m learning, building, and practicing code every day!</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="output" style="margin-top: 20px; font-size: 1.2em;"></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Jober. All rights reserved.
+  </footer>
+
+  <script>
+    function showMessage() {
+      const messages = [
+        "You're doing great, Jober!",
+        "Keep coding. Keep growing.",
+        "Success is built one script at a time!",
+        "Welcome to the world of code!",
+        "Termux + HTML = Superpower 💻"
+      ];
+      const random = Math.floor(Math.random() * messages.length);
+      document.getElementById("output").textContent = messages[random];
+    }
+  </script>
+
+</body>
+</html>
